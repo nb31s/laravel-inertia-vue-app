@@ -195,6 +195,10 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        /*
+         * Original Function Service Providers...
+         */
+        App\Packages\Functions\Reserve\ReserveFunctionServiceProvider::class,
     ],
 
     /*
