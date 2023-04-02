@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import GuestLayout from '@/Layouts/GuestLayout.vue';
 import { Head } from '@inertiajs/vue3';
+import ReserveForm from './Partials/ReserveForm.vue';
 
 type reservableSlotItem = {
     reservableDateTime: string
@@ -27,6 +28,10 @@ defineProps<{
                         {{ item.reservableDateTime }}
                     </div>
                 </div>
+            </div>
+
+            <div class="p-4 sm:p-8 bg-white shadow sm:rounded-lg">
+                <ReserveForm class="max-w-xl" />
             </div>
         </div>
     </GuestLayout>

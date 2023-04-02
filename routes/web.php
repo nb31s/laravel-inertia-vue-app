@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\Reserves\GetReservableSlotController;
+use App\Http\Controllers\Reserves\ReserveController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -36,7 +37,8 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-Route::get('/reserves', [GetReservableSlotController::class, '__invoke'])->name('reserves.slots');
+Route::get('/reserves', [GetReservableSlotController::class, '__invoke'])->name('reserves');
+Route::post('/reserves', [ReserveController::class, '__invoke'])->name('reserves');
 
 
 require __DIR__.'/auth.php';
