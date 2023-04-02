@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Packages\Functions\Reserve\infrastructures\Repositories;
+namespace App\Packages\Functions\Reserve\Infrastructures\Repositories;
 
 use App\Packages\Functions\Reserve\Domains\Entities\ReserveEntity;
 use App\Packages\Functions\Reserve\Domains\Repositories\ReserveRepositoryInterface;
