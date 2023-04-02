@@ -4,7 +4,7 @@ namespace App\Packages\Functions\Reserve;
 
 use App\Packages\Functions\Reserve\Domains\Repositories\ReserveRepositoryInterface;
 use App\Packages\Functions\Reserve\Infrastructures\Queries\GetReservableSlotListQuery;
-use App\Packages\Functions\Reserve\infrastructures\Repositories\ReserveRepository;
+use App\Packages\Functions\Reserve\Infrastructures\Repositories\ReserveRepository;
 use App\Packages\Functions\Reserve\UseCases\GetReservableSlotListUseCase;
 use App\Packages\Functions\Reserve\UseCases\Ports\GetReservableSlotListUseCaseInterface;
 use App\Packages\Functions\Reserve\UseCases\Ports\ReserveUseCaseInterface;
